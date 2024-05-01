@@ -1,0 +1,127 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+body{
+    background-color: rgb(85,159,255);
+    display: flex;
+    width: 100%;
+    min-height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    display: flex;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricing-plan{
+    padding: 1.5rem;
+}
+.pricing-img{
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+}
+.pricing-header{
+    color: #888;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.pricing-features{
+    margin: 1.2rem 0 0;
+    color: #016ff0;
+}
+.pricing-features-item{
+    padding: 1rem 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    line-height: 1.5;
+    border-top: 1px solid #888;
+}
+
+.pricing-features-item:last-child{
+    border-bottom: 1px solid gray;
+    min-height: 2.5rem;
+}
+
+.pricing-price{
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 700;
+    color: #016ff0;
+    display: block;
+}
+
+.pricing-button{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #016ff0;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    display: inline-block;
+    color: #016ff0;
+    transition: background-color .2s linear;
+
+}
+.pricing-button:hover{
+    background-color: #e1f1ff;
+}
+
+@media(max-width:976px){
+    .panel{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+}
